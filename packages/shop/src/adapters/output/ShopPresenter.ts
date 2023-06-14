@@ -64,6 +64,7 @@ export class ShopPresenter
    private displayPage(page: Page, data?: Record<string, any>) {
       this._currentPage = page
       if (data) {
+         // @ts-ignore
          this._state[page] = data
       }
       this.render()

@@ -5,7 +5,7 @@ import { ShopPresenter } from "../adapters/output/ShopPresenter"
 
 describe("AddBikeToCart", () => {
    let renderSpy = jest.fn()
-   let presenter
+   let presenter = new ShopPresenter(renderSpy)
 
    beforeEach(() => {
       jest.clearAllMocks()
